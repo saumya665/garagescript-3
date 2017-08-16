@@ -1,7 +1,7 @@
 const add=require('./add.js');
 
-const addTest=(a,b,res)=>{
-  if (add(a,b)==res){
+const addTest=(num1,num2,res)=>{
+  if (add(num1,num2)==res){
     console.log("Test case passed!!");
   }
   else{
