@@ -1,8 +1,5 @@
 /// Printing all file names except your name in files.txt 
-
 const fs= require('fs');
-const emptyFunc=()=>{
-}
 const fileSys=(err,files)=>{
    let names="";
    files.forEach((eachName)=>{
@@ -10,7 +7,7 @@ const fileSys=(err,files)=>{
       names = names+  ' ' + eachName;
     }
   });
-   fs.writeFile('/home/bharath/gitcode/garagescript/files.txt',names,emptyFunc);
+  fs.writeFile('/home/bharath/gitcode/garagescript/files.txt',names,()=>{});
 };
 
 fs.readdir('/home',fileSys);
