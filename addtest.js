@@ -5,7 +5,7 @@ const addTest=(num1,num2,res)=>{
     console.log("Test case passed!!");
   }
   else{
-  console.log("Failed");
+    console.log("Failed");
   }
 }  
 
