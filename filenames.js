@@ -6,12 +6,11 @@ app.listen(3609);
 
 const allFiles= [];
 const fileSys=(err,files)=>{
-  files.forEach(printOtherNames);
-}
-const printOtherNames=(eachFile)=>{
-  if(eachFile != 'bharath'){
+  files.forEach((eachFile)=>{
+    if(eachFile != 'bharath'){
       allFiles.push(eachFile);
-  }
+    }
+  });
 }
 const handle=(req,res)=>{
   res.send(allFiles);
